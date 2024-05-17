@@ -4,11 +4,40 @@
         padding: 0;
         box-sizing: border-box;
 }
-header{
-        background: url('')
-}
+
 body {
  color: white
 font-family: 'calibri'
     }
     
+header{
+        background: url('minecraft.jpg');
+     height:450px;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+     section{
+          min-widht: 1000px;
+          margin: auto;
+          padding: 30px 0;
+     }
+     section h1 {
+          font-size: 44px;
+     }
+     .conte {
+          text-aling: center;
+     }
+     .content p {
+          font-size: 60px;
+          font-weight: bold;
+          margin: 1em 0;
+     }
+     .content a {
+          color: white;
+          text-decoration: none;
+          background: #8BC34A;
+          padding: 1px 20px;
+          border-radius: 30px;
+          font-size: 30px;
+          margin: 10px;
+     }
