@@ -1,43 +1,33 @@
-
-*{
-     margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-}
-
 body {
- color: white
-font-family: 'calibri'
-    }
-    
-header{
-        background-color: black;
-     height:450px;
-     background-size: cover;
-     background-repeat: no-repeat;
+  background: linear-gradient(to bottom, #31BEF2, #000000);
+  display: flex;
+  justify-content: center; /* changed from space-between to center */
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
-     section{
-          min-widht: 1000px;
-          margin: auto;
-          padding: 30px 0;
-     }
-     section h1 {
-          font-size: 44px;
-     }
-     .conte {
-          text-aling: center;
-     }
-     .content p {
-          font-size: 60px;
-          font-weight: bold;
-          margin: 1em 0;
-     }
-     .content a {
-          color: white;
-          text-decoration: none;
-          background: #8BC34A;
-          padding: 1px 20px;
-          border-radius: 30px;
-          font-size: 30px;
-          margin: 10px;
-     }
+
+.container {
+  width: 100%; /* no need for display: flex here */
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* added some extra flair */
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
