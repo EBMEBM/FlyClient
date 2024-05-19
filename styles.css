@@ -57,11 +57,12 @@ nav .nav-links a:hover {
 
 /* Estilos de la sección hero */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 8em 1em 5em;
     margin-top: 60px; /* Offset for fixed header */
+    border-bottom: 5px solid #ff6600;
 }
 
 .hero h1 {
