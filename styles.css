@@ -7,9 +7,9 @@ body {
 
 /* Estilos del header y la navegación */
 header {
-    background-color: #333;
+    background-color: #000000;
     color: white;
-    padding: 1em 0;
+    padding: 3em 0;
 }
 
 nav {
