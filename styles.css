@@ -1,15 +1,21 @@
 /* Estilos globales */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 /* Estilos del header y la navegación */
 header {
-    background-color: #000000;
+    background-color: #000;
     color: white;
-    padding: 3em 0;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -22,8 +28,9 @@ nav {
 }
 
 nav .logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 nav .nav-links {
@@ -39,10 +46,13 @@ nav .nav-links li {
 nav .nav-links a {
     color: white;
     text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background 0.3s;
 }
 
 nav .nav-links a:hover {
-    text-decoration: underline;
+    background: #444;
+    border-radius: 5px;
 }
 
 /* Estilos de la sección hero */
@@ -50,11 +60,12 @@ nav .nav-links a:hover {
     background: url('hero-image.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 5em 1em;
+    padding: 8em 1em 5em;
+    margin-top: 60px; /* Offset for fixed header */
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0.5em 0;
 }
 
@@ -66,10 +77,11 @@ nav .nav-links a:hover {
 .hero .cta-button {
     background-color: #ff6600;
     color: white;
-    padding: 0.75em 1.5em;
+    padding: 1em 2em;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 1.2em;
+    transition: background 0.3s;
 }
 
 .hero .cta-button:hover {
@@ -79,13 +91,13 @@ nav .nav-links a:hover {
 /* Estilos de las características */
 .features {
     max-width: 1200px;
-    margin: 2em auto;
+    margin: 4em auto;
     padding: 0 1em;
     text-align: center;
 }
 
 .features h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 1em;
 }
 
@@ -94,24 +106,38 @@ nav .nav-links a:hover {
     padding: 2em;
     margin: 1em 0;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .features .feature h3 {
     margin-top: 0;
+    font-size: 1.8em;
 }
 
 .features .feature p {
     margin: 0.5em 0 0;
+    color: #666;
+    font-size: 1.1em;
 }
 
 /* Estilos del footer */
 footer {
-    background-color: #333;
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
 }
